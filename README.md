@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ```bash
 python data/download_tinystories.py   # -> data/raw_tinystories.csv
 python src/clean_pipeline.py          # -> data/cleaned_tinystories.csv
-jupyter notebook notebooks/01_phase1_cleaning_eda.ipynb
+jupyter notebook notebooks/01_phase1_cleaning.ipynb
 ```
 
 ## Project structure

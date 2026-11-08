@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Data & model artifacts (regenerate via scripts)
+data/*.csv
+*.bin
+*.pt
+*.pth
+*.model
+*.pkl
+*.npy
+checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

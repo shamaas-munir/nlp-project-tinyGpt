@@ -20,3 +20,8 @@ checkpoints/
 Thumbs.db
 .vscode/
 .idea/
+
+# Reports and submission documents stay out of the repo
+reports/
+*.docx
+*.pdf

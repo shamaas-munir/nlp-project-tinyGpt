@@ -46,7 +46,6 @@ data/        download script (CSV files are git-ignored)
 src/         cleaning pipeline and later model code
 notebooks/   exploration and analysis notebooks
 figures/     saved plots
-reports/     phase reports
 ```
 
 ## Phases

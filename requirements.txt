@@ -9,3 +9,7 @@ matplotlib==3.11.2
 # Notebooks
 jupyter==1.1.1
 ipykernel==7.4.0
+
+# Phase 2 - word representations
+scikit-learn==1.9.1
+gensim==4.4.0

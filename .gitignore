@@ -25,3 +25,6 @@ Thumbs.db
 reports/
 *.docx
 *.pdf
+
+# Phase 2 saved models (rebuilt by the scripts in src/)
+models/

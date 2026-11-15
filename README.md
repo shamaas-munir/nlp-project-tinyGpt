@@ -36,22 +36,33 @@ pip install -r requirements.txt
 ```bash
 python data/download_tinystories.py   # -> data/raw_tinystories.csv
 python src/clean_pipeline.py          # -> data/cleaned_tinystories.csv
-jupyter notebook notebooks/01_phase1_cleaning.ipynb
+python src/build_count_models.py      # -> models/ BoW and TF-IDF vectorizers
+python src/train_embeddings.py        # -> models/ CBOW, Skip-gram and fastText
+```
+
+Notebooks: `01_phase1_cleaning`, `02_count_based`, `03_embeddings`, `04_probing`.
+
+To turn a story into a vector (Phase 3 uses this):
+
+```python
+from src.vectorize import vectorize
+vec = vectorize(story_text, method="tfidf")   # bow, tfidf, cbow, skipgram, fasttext
 ```
 
 ## Project structure
 
 ```text
 data/        download script (CSV files are git-ignored)
-src/         cleaning pipeline and later model code
+src/         cleaning, vectorizers, embeddings, vectorize()
 notebooks/   exploration and analysis notebooks
 figures/     saved plots
+models/      saved vectorizers and embeddings (git-ignored, made by the scripts)
 ```
 
 ## Phases
 
-- [ ] **Phase 1:** data acquisition and cleaning (`assignment-1`)
-- [ ] **Phase 2:** BoW, TF-IDF, Word2Vec and fastText (`assignment-2`)
+- [x] **Phase 1:** data acquisition and cleaning (`assignment-1`)
+- [x] **Phase 2:** BoW, TF-IDF, Word2Vec and fastText (`assignment-2`)
 - [ ] **Phase 3:** classical ML classifiers
 - [ ] **Phase 4:** Story-GPT, a Transformer language model
 
